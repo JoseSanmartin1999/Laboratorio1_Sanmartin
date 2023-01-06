@@ -49,7 +49,7 @@ def dolaresYuan():
     resultado=dolares*dolarenyuan
 #Se imprimen los resultados
     print(dolares ,"dolares es igual que",resultado,"Renminbi")            
-
+    reiniciarse()
 def yuanDolar():
     """Es una funcion la cual nos validara ciertos datos y transformara el valor dado en Euro
     a Dolar
@@ -89,7 +89,7 @@ def yuanDolar():
     res=yuan*yuanadolar
     print(yuan,"Yuanes es igual a ", res ,"Dolares($)")
 #Se imprimen los resultados
-
+    reiniciarse()
 def dolarPesocolombiano():
     """ Es una funcion la cual nos validara ciertos datos y transformara el valor dado en libras
     a gramos 
@@ -129,6 +129,7 @@ def dolarPesocolombiano():
     res=dolar*dolarapeso
 #Se imprimen los resultados
     print(dolar,"Dolares es igual a ", res ,"Pesos colombianos")
+    reiniciarse()
     
 def pesoColadolar():
     """Es una funcion la cual nos validara ciertos datos y transformara el valor dado en gramos
@@ -169,6 +170,7 @@ def pesoColadolar():
     res=peso*pesoadolar
     #Imprimir los resultados
     print(peso,"Peso Colombiano es igual a ", res ,"dolares")
+    reiniciarse()
 
 def yuanaPeso():
     """ Es una funcion la cual nos validara ciertos datos y transformara el valor dado en euros
@@ -209,6 +211,7 @@ def yuanaPeso():
     res=yuan*yuanapeso
     #Imprimir los resultados
     print(yuan,"Yuanes es igual a ", res ,"renminbi")
+    reiniciarse()
 
 def pesoaYuan():
     """ Es una funcion la cual nos validara ciertos datos y transformara el valor dado en yenes
@@ -248,7 +251,8 @@ def pesoaYuan():
     #Se calcula el resultado
     res=peso*pesoayuan
     #Imprimir los resultados
-    print(peso,"yenes es igual a ", res ,"renminbi")     
+    print(peso,"yenes es igual a ", res ,"renminbi") 
+    reiniciarse()    
 def reiniciarse():
     """ 
     Es un funcion en la que preguntaremos al usuario si desea volver a ejecutar el 
@@ -344,16 +348,14 @@ def Transformacion():
             #SE retorna la siguiente funncion
             return Transformacion()   
 
-def transDineroRMB():
-    print("*--Bienvenido a tu cambio--*")
-    Transformacion()
-    print("Pregunta")
-    reiniciarse()
+
 
 #Programa principal 
 if __name__ == '__main__':
 #Se llama la funcion principal        
-    transDineroRMB()
+   Transformacion()
 #Se saldra del programa con un click
-    os.system("Pause")
+os.system("Pause")
+              
+
               
